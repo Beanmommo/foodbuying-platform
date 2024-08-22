@@ -1,4 +1,6 @@
 <template>
-    iSpe
-    <slot />
+    <LayoutHeader />
+    <LayoutContent>
+        <slot />
+    </LayoutContent>
 </template>
