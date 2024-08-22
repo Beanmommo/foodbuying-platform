@@ -1,0 +1,9 @@
+{
+  "navigationItems": [
+    {
+      "label": "Browse",
+      "icon": "pi pi-search",
+      "route": "/browse"
+    }
+  ]
+}
