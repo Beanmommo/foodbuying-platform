@@ -1,12 +1,17 @@
 <script setup lang="ts">
-const ingredient = ref('')
+
 const testStore = useTestStore()
-const { test } = storeToRefs(testStore)
+const { test, testProp } = storeToRefs(testStore)
+const lmaoProp = ref({})
+onMounted(() => {
+    lmaoProp.value = useCloneDeep(testProp)
+})
 </script>
 <template>
     <Button label="Check" icon="pi pi-check" />
     <p>Hoal</p>
-    {{ test }}
+    <p>{{ test }}</p>
+    <p>{{ lmaoProp }}</p>
 </template>
 
 <style lang="scss" scoped></style>

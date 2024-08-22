@@ -17,6 +17,7 @@ export default defineNuxtConfig({
   modules: [
     "@primevue/nuxt-module",
     "@pinia/nuxt",
+    "nuxt-lodash",
     [
       "@nuxtjs/google-fonts",
       {
