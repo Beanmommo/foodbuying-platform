@@ -1,0 +1,22 @@
+{
+  "key1": {
+    "name": "Tip Top Meat",
+    "foodTypes": ["MEAT", "POULTRY"],
+    "image": "supplierTipTopMeat.jpg"
+  },
+  "key2": {
+    "name": "Seafood Delight",
+    "foodTypes": ["SEAFOOD"],
+    "image": "supplierSeafoodDelight.jpg"
+  },
+  "key3": {
+    "name": "Veggie Haven",
+    "foodTypes": ["VEGETABLES"],
+    "image": "supplierVeggieHaven.jpg"
+  },
+  "key4": {
+    "name": "Pantry Plus",
+    "foodTypes": ["PANTRY", "VEGETABLES"],
+    "image": "supplierPantryPlus.jpg"
+  }
+}

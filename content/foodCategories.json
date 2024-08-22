@@ -1,0 +1,27 @@
+{
+  "key1": {
+    "name": "Pantry",
+    "type": "PANTRY",
+    "image": "categoryPantry.jpg"
+  },
+  "key2": {
+    "name": "Vegetables",
+    "type": "VEGETABLES",
+    "image": "categoryVegetables.jpg"
+  },
+  "key3": {
+    "name": "Meat",
+    "type": "MEAT",
+    "image": "categoryMeat.jpg"
+  },
+  "key4": {
+    "name": "Poultry",
+    "type": "POULTRY",
+    "image": "categoryPoultry.jpg"
+  },
+  "key5": {
+    "name": "Seafood",
+    "type": "SEAFOOD",
+    "image": "categorySeafood.jpg"
+  }
+}
