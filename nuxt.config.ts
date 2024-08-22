@@ -14,7 +14,19 @@ export default defineNuxtConfig({
       },
     },
   },
-  modules: ["@primevue/nuxt-module"],
+  modules: [
+    "@primevue/nuxt-module",
+    [
+      "@nuxtjs/google-fonts",
+      {
+        display: "swap",
+        families: {
+          Inter: [400, 500, 600, 700],
+        },
+        download: true,
+      },
+    ],
+  ],
   primevue: {
     options: {
       theme: {
