@@ -1,0 +1,4 @@
+<template>
+    iSpe
+    <slot />
+</template>
