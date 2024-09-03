@@ -3,6 +3,7 @@
 <template>
     <LabelPage>Dashboard</LabelPage>
     <GraphFoodPrices />
+    <GraphSpendingCategory />
     <ul>
         <li>
             show trends on food prices - 3 items

@@ -1,12 +1,12 @@
 <template>
-    <span class="pageLabel">
+    <span class="sectionLabel">
         <slot />
     </span>
 </template>
 
 <style lang="scss" scoped>
-.pageLabel {
-    font-size: 24px;
+.sectionLabel {
+    font-size: 18px;
     font-weight: 600;
     margin-bottom: $margin;
 }
