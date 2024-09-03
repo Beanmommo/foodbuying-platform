@@ -14,6 +14,8 @@
 
 <style lang="scss" scoped>
 .content {
+    overflow: auto;
+    height: calc(100vh - 80px);
     padding-top: $margin;
     display: grid;
     grid-template-columns: 200px calc(100vw - 200px)
