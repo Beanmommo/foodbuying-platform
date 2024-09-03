@@ -4,20 +4,22 @@ const navigationItems = ref(headerNavigation.navigationItems)
 </script>
 
 <template>
-    <Menubar :model="navigationItems">
-        <template #item="{ item }">
-            <span :class="item.icon" />
-            <NuxtLink :to="item.route">
-                {{ item.label }}
-            </NuxtLink>
-        </template>
-
-    </Menubar>
+    <div class="header">
+        <span>FoodMania</span>
+        <div>Menu</div>
+        <div>Profile</div>
+    </div>
 </template>
 
 <style lang="scss" scoped>
 .header {
-    padding: $margin;
-    border-bottom: 1px solid #c4c4c4;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1920px;
+    height: 80px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    margin-bottom: $margin;
 }
 </style>

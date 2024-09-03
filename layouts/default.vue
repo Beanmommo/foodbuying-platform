@@ -1,6 +1,4 @@
 <template>
     <LayoutHeader />
-    <LayoutContent>
-        <slot />
-    </LayoutContent>
+    <slot />
 </template>
