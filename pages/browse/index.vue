@@ -1,3 +1,3 @@
 <template>
-    Browse
+    <LabelPage>Browse</LabelPage>
 </template>

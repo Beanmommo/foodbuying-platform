@@ -2,6 +2,12 @@
 $sub-unit: 4px;
 $unit: 8px;
 $margin: $unit * 2;
+$padding: $unit * 2;
+
+// Layout
+$max-page-width: 1920px;
+$logo-width: 200px;
+$profile-width: 200px;
 
 // Font
 $primary-font: "Inter", sans-serif;

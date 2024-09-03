@@ -17,13 +17,13 @@
     padding-top: $margin;
     margin-left: auto;
     margin-right: auto;
-    width: 1920px;
+    width: $max-page-width;
     display: grid;
-    grid-template-columns: 200px 1fr 200px;
+    grid-template-columns: $logo-width 1fr;
 }
 
-.menu {
-    display: grid;
-    gap: $margin;
+.body {
+    border-radius: 20px;
+    height: calc(100vh - 200px);
 }
 </style>

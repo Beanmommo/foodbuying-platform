@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import headerNavigation from "../content/headerNavigation.json"
-const navigationItems = ref(headerNavigation.navigationItems)
+// import headerNavigation from "../content/headerNavigation.json"
+// const navigationItems = ref(headerNavigation.navigationItems)
 </script>
 
 <template>
     <div class="header">
         <span>FoodMania</span>
-        <div>Menu</div>
+        <div></div>
         <div>Profile</div>
     </div>
 </template>
@@ -15,7 +15,7 @@ const navigationItems = ref(headerNavigation.navigationItems)
 .header {
     margin-left: auto;
     margin-right: auto;
-    width: 1920px;
+    width: $max-page-width;
     height: 80px;
     align-items: center;
     display: grid;
