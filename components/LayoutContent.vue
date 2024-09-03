@@ -15,11 +15,8 @@
 <style lang="scss" scoped>
 .content {
     padding-top: $margin;
-    margin-left: auto;
-    margin-right: auto;
-    width: $max-page-width;
     display: grid;
-    grid-template-columns: $logo-width 1fr;
+    grid-template-columns: 200px calc(100vw - 200px)
 }
 
 .body {
