@@ -18,11 +18,12 @@
     height: calc(100vh - 80px);
     padding-top: $margin;
     display: grid;
-    grid-template-columns: 200px calc(100vw - 200px)
+    grid: auto-flow / 200px 1fr 200px;
 }
 
 .body {
     border-radius: 20px;
     height: calc(100vh - 200px);
+
 }
 </style>

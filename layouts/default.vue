@@ -12,9 +12,6 @@
         <template #body>
             <slot />
         </template>
-        <template #side>
-            TEST
-        </template>
     </LayoutContent>
 </template>
 

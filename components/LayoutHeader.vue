@@ -5,7 +5,7 @@
 
 <template>
     <div class="header">
-        <span>FoodMania</span>
+        <span class="logo">FoodMania</span>
         <div>test</div>
         <div>Profile</div>
     </div>
@@ -13,12 +13,8 @@
 
 <style lang="scss" scoped>
 .header {
-    margin-left: $margin;
     margin-bottom: $margin;
-    height: 80px;
-    align-items: center;
     display: grid;
-    grid-template-columns: 200px calc(100vw - 400px) 200px;
-    margin-bottom: $margin;
+    grid: auto-flow / 200px 1fr 200px;
 }
 </style>

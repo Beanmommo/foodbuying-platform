@@ -2,6 +2,7 @@
 </script>
 <template>
     <LabelPage>Dashboard</LabelPage>
+    <GraphFoodPrices />
     <ul>
         <li>
             show trends on food prices - 3 items
