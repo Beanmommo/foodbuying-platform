@@ -8,7 +8,7 @@
 .sectionLabel {
     font-size: 18px;
     font-weight: 500;
-    margin-bottom: $margin-md;
+    margin-bottom: $margin;
     color: purple;
 }
 </style>
