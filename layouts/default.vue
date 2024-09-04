@@ -5,7 +5,7 @@
             <div class="menu">
                 <NuxtLink to="/">Dashboard</NuxtLink>
                 <NuxtLink to="/browse">Browse</NuxtLink>
-                <NuxtLink to="/customList">Custom list</NuxtLink>
+                <NuxtLink to="/customList">Your List</NuxtLink>
                 <NuxtLink to="/favorite">Favorites</NuxtLink>
                 <NuxtLink to="/activity">Activity</NuxtLink>
             </div>

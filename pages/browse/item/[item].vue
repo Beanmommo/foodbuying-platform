@@ -1,18 +1,25 @@
 <script setup lang="ts">
+const router = useRoute()
+
 const home = ref({
     route: '/',
     icon: 'pi pi-home'
 })
 
 const items = ref([
-    { label: 'Your List' },
+    {
+        label: 'Browse',
+        route: '/browse'
+    },
+    { label: 'Pantry', route: '/browse/pantry' },
+    { label: 'Sauces', route: '/browse/pantry' },
+    { label: 'Some Chinese Brand: Soy Sauce 1750ml' }
 ])
 </script>
 
-
 <template>
     <LayoutPage>
-        <LabelPage>List</LabelPage>
+        <LabelPage>Item Name</LabelPage>
         <Breadcrumb :home="home" :model="items">
             <template #item="{ item, props }">
                 <NuxtLink :to="item.route" v-if="item.route" style="text-decoration: none;">

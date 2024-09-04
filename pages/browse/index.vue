@@ -78,7 +78,7 @@ const categories = ref([
                             <div class="info__wrapper">
                                 <Image>
                                     <template #image>
-                                        <img :src="category.imageUrl" width="180" class=" aspect-video"
+                                        <img :src="category.imageUrl" width="160" class=" aspect-video"
                                             :alt="category.name" />
                                     </template>
                                 </Image>
