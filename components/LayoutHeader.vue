@@ -6,7 +6,7 @@
 <template>
     <div class="header">
         <span class="logo">FoodMania</span>
-        <div>test</div>
+        <div></div>
         <div>Profile</div>
     </div>
 </template>

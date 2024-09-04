@@ -7,6 +7,7 @@
                 <NuxtLink to="/browse">Browse</NuxtLink>
                 <NuxtLink to="/customList">Custom list</NuxtLink>
                 <NuxtLink to="/favorite">Favorites</NuxtLink>
+                <NuxtLink to="/activity">Activity</NuxtLink>
             </div>
         </template>
         <template #body>
