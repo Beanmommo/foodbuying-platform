@@ -60,10 +60,10 @@ const recentOrder = [{
     <div>
         <LabelSection>Recent Orders</LabelSection>
         <DataTable :value="recentOrder" paginator :rows="8">
-            <Column sortable field="date" header="Date" />
+            <Column field="date" header="Date" />
             <Column field="orderNo" header="Order No.">
                 <template #body="{ data }">
-                    <NuxtLink :to="'order/' + data.orderNo">
+                    <NuxtLink :to="'activity/order/' + data.orderNo">
                         <span>{{ data.orderNo }}</span>
                     </NuxtLink>
                 </template>
