@@ -23,5 +23,8 @@ const items = ref([
                 <span v-else class=" font-semibold">{{ item.label }}</span>
             </template>
         </Breadcrumb>
+        User can favorite supplier/items <br />
+        Not sure if this page is needed
+
     </LayoutPage>
 </template>

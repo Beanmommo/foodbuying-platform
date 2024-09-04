@@ -24,5 +24,16 @@ const items = ref([
                 <span v-else class=" font-semibold">{{ item.label }}</span>
             </template>
         </Breadcrumb>
+        Rename to "Your Catalog"<br />
+        List is an array of catalog items<br />
+        { name: string, lists: Item[]}
+        <ul>
+            <li>
+                Add List button
+            </li>
+            <li>
+                Show all custom list
+            </li>
+        </ul>
     </LayoutPage>
 </template>
