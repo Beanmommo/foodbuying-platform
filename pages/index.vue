@@ -8,14 +8,6 @@
             <GraphSpendingCategory />
             <TableRecentOrder />
         </div>
-        <ul>
-            <li>
-                show trends on food prices - 3 items
-            </li>
-            <li>
-                total spending [by categories]
-            </li>
-        </ul>
     </div>
 </template>
 
