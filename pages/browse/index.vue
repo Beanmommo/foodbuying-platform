@@ -71,6 +71,16 @@ const categories = ref([
         </div>
 
         <div class="category__wrapper">
+            <NuxtLink to="/browse/supplier" style="text-decoration: none;">
+                <Card class=" hover:bg-gray-100">
+                    <template #content>
+                        Browse Supplier
+                    </template>
+                </Card>
+            </NuxtLink>
+        </div>
+
+        <div class="category__wrapper">
             <template v-for="category in categories">
                 <NuxtLink :to="category.route" style="text-decoration: none;">
                     <Card class=" hover:bg-gray-100">

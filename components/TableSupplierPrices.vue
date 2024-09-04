@@ -42,8 +42,10 @@ function isSameAsAverage(price: number) {
             </template>
         </Column>
         <Column>
-            <template #body>
-                <span class="pi pi-eye hover:bg-slate-100 p-2 rounded-lg cursor-pointer" />
+            <template #body="{ data }">
+                <NuxtLink :to="'/browse/supplier/' + data.supplierName" style="text-decoration: none; color: #000;">
+                    <span class="pi pi-eye hover:bg-slate-100 p-2 rounded-lg cursor-pointer" />
+                </NuxtLink>
             </template>
         </Column>
     </DataTable>
