@@ -25,7 +25,6 @@ const items = ref([
             </template>
         </Breadcrumb>
         <TableAllOrder />
-        Show all recent orders
     </LayoutPage>
 
 </template>
