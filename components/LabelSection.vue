@@ -7,7 +7,8 @@
 <style lang="scss" scoped>
 .sectionLabel {
     font-size: 18px;
-    font-weight: 600;
-    margin-bottom: $margin;
+    font-weight: 500;
+    margin-bottom: $margin-md;
+    color: purple;
 }
 </style>

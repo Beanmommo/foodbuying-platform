@@ -42,9 +42,15 @@ const setChartOptions = () => {
 
 <template>
     <div>
-        <LabelSection>Total Spending</LabelSection>
+
         <div class="wrapper">
             <Chart type="doughnut" :data="chartData" :options="chartOptions!" class="md:w-[30em] w-full" />
+            <span class="amountSpent">
+                <LabelSection>Total Spending</LabelSection>
+                <div>
+                    $ 1567.00
+                </div>
+            </span>
         </div>
     </div>
 </template>
@@ -53,6 +59,16 @@ const setChartOptions = () => {
 .wrapper {
     width: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.amountSpent {
+    font-size: 3vw;
+    font-weight: 500;
+    color: purple;
+    margin-right: 1rem;
+    height: 100%;
+    align-items: center;
 }
 </style>
