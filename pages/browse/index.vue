@@ -36,7 +36,8 @@ const categories = ref([
     },
     {
         name: 'Pantry',
-        imageUrl: 'https://thewoksoflife.com/wp-content/uploads/2022/10/Chinese-Ingredients-Glossary-Sauces.jpg'
+        imageUrl: 'https://thewoksoflife.com/wp-content/uploads/2022/10/Chinese-Ingredients-Glossary-Sauces.jpg',
+        route: '/browse/pantry'
     },
     {
         name: 'Products',
@@ -71,19 +72,21 @@ const categories = ref([
 
         <div class="category__wrapper">
             <template v-for="category in categories">
-                <Card>
-                    <template #content>
-                        <div class="info__wrapper">
-                            <Image>
-                                <template #image>
-                                    <img :src="category.imageUrl" width="180" class=" aspect-video"
-                                        :alt="category.name" />
-                                </template>
-                            </Image>
-                            {{ category.name }}
-                        </div>
-                    </template>
-                </Card>
+                <NuxtLink :to="category.route" style="text-decoration: none;">
+                    <Card class=" hover:bg-gray-100">
+                        <template #content>
+                            <div class="info__wrapper">
+                                <Image>
+                                    <template #image>
+                                        <img :src="category.imageUrl" width="180" class=" aspect-video"
+                                            :alt="category.name" />
+                                    </template>
+                                </Image>
+                                {{ category.name }}
+                            </div>
+                        </template>
+                    </Card>
+                </NuxtLink>
             </template>
         </div>
     </LayoutPage>
