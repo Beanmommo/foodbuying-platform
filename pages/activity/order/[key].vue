@@ -71,7 +71,7 @@ const totalAmount = computed(() => {
 </script>
 
 <template>
-    <div class="wrapper">
+    <LayoutPage>
         <LabelPage>Order No: {{ key }}</LabelPage>
         <Breadcrumb :home="home" :model="items">
             <template #item="{ item, props }">
@@ -126,15 +126,10 @@ const totalAmount = computed(() => {
             </ColumnGroup>
         </DataTable>
 
-    </div>
+    </LayoutPage>
 </template>
 
 <style lang="scss" scoped>
-.wrapper {
-    display: grid;
-    gap: $margin;
-}
-
 .information__wrapper {
     display: grid;
     gap: $margin

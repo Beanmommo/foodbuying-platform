@@ -10,7 +10,7 @@ const items = ref([
 </script>
 
 <template>
-    <div class="wrapper">
+    <LayoutPage>
         <LabelPage>Activity</LabelPage>
         <Breadcrumb :home="home" :model="items">
             <template #item="{ item, props }">
@@ -26,11 +26,5 @@ const items = ref([
         <div>
             <NuxtLink to="/activity/order">Orders</NuxtLink>
         </div>
-    </div>
+    </LayoutPage>
 </template>
-
-<style lang="scss" scoped>
-.wrapper {
-    display: grid;
-}
-</style>

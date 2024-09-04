@@ -11,16 +11,18 @@ const items = ref([
 
 
 <template>
-    <LabelPage>List</LabelPage>
-    <Breadcrumb :home="home" :model="items">
-        <template #item="{ item, props }">
-            <NuxtLink :to="item.route" v-if="item.route" style="text-decoration: none;">
-                <template v-if="item.icon">
-                    <span :class="item.icon" />
-                </template>
-                {{ item.label }}
-            </NuxtLink>
-            <span v-else class=" font-semibold">{{ item.label }}</span>
-        </template>
-    </Breadcrumb>
+    <LayoutPage>
+        <LabelPage>List</LabelPage>
+        <Breadcrumb :home="home" :model="items">
+            <template #item="{ item, props }">
+                <NuxtLink :to="item.route" v-if="item.route" style="text-decoration: none;">
+                    <template v-if="item.icon">
+                        <span :class="item.icon" />
+                    </template>
+                    {{ item.label }}
+                </NuxtLink>
+                <span v-else class=" font-semibold">{{ item.label }}</span>
+            </template>
+        </Breadcrumb>
+    </LayoutPage>
 </template>

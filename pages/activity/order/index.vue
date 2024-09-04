@@ -11,7 +11,7 @@ const items = ref([
 </script>
 
 <template>
-    <div class="wrapper">
+    <LayoutPage>
         <LabelPage>Orders</LabelPage>
         <Breadcrumb :home="home" :model="items">
             <template #item="{ item, props }">
@@ -26,12 +26,6 @@ const items = ref([
         </Breadcrumb>
         <TableAllOrder />
         Show all recent orders
-    </div>
+    </LayoutPage>
 
 </template>
-
-<style lang="scss" scoped>
-.wrapper {
-    display: grid;
-}
-</style>

@@ -50,40 +50,43 @@ const categories = ref([
 </script>
 
 <template>
-    <LabelPage>Browse</LabelPage>
-    <Breadcrumb :home="home" :model="items">
-        <template #item="{ item, props }">
-            <NuxtLink :to="item.route" v-if="item.route" style="text-decoration: none;">
-                <template v-if="item.icon">
-                    <span :class="item.icon" />
-                </template>
-                {{ item.label }}
-            </NuxtLink>
-            <span v-else class=" font-semibold">{{ item.label }}</span>
-        </template>
-    </Breadcrumb>
+    <LayoutPage>
+        <LabelPage>Browse</LabelPage>
+        <Breadcrumb :home="home" :model="items">
+            <template #item="{ item, props }">
+                <NuxtLink :to="item.route" v-if="item.route" style="text-decoration: none;">
+                    <template v-if="item.icon">
+                        <span :class="item.icon" />
+                    </template>
+                    {{ item.label }}
+                </NuxtLink>
+                <span v-else class=" font-semibold">{{ item.label }}</span>
+            </template>
+        </Breadcrumb>
 
-    <div class="search__wrapper">
-        <span class="pi pi-search" />
-        <InputText placeholder="Search" class=" w-full" />
-    </div>
+        <div class="search__wrapper">
+            <span class="pi pi-search" />
+            <InputText placeholder="Search" class=" w-full" />
+        </div>
 
-    <div class="category__wrapper">
-        <template v-for="category in categories">
-            <Card>
-                <template #content>
-                    <div class="info__wrapper">
-                        <Image>
-                            <template #image>
-                                <img :src="category.imageUrl" width="180" class=" aspect-video" :alt="category.name" />
-                            </template>
-                        </Image>
-                        {{ category.name }}
-                    </div>
-                </template>
-            </Card>
-        </template>
-    </div>
+        <div class="category__wrapper">
+            <template v-for="category in categories">
+                <Card>
+                    <template #content>
+                        <div class="info__wrapper">
+                            <Image>
+                                <template #image>
+                                    <img :src="category.imageUrl" width="180" class=" aspect-video"
+                                        :alt="category.name" />
+                                </template>
+                            </Image>
+                            {{ category.name }}
+                        </div>
+                    </template>
+                </Card>
+            </template>
+        </div>
+    </LayoutPage>
 </template>
 
 <style lang="scss" scoped>

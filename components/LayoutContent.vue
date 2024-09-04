@@ -15,15 +15,9 @@
 <style lang="scss" scoped>
 .content {
     overflow: auto;
-    height: calc(100vh - 80px);
+    height: calc(100vh - $header-height);
     padding-top: $margin;
     display: grid;
     grid: auto-flow / 200px 1fr 200px;
-}
-
-.body {
-    border-radius: 20px;
-    height: calc(100vh - 200px);
-
 }
 </style>

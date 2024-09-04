@@ -1,10 +1,9 @@
 <template>
     <div class="foodPrices">
-        <CardFoodPriceChanges food-name="Avocado" price-change="-0.2" />
-        <CardFoodPriceChanges food-name="Maryland Chicken" price-change="1.3" />
-        <CardFoodPriceChanges food-name="Duck Egg" price-change="0.9" />
+        <CardFoodPriceChanges food-name="Some Chinese Brand: Silk Tofu" price-change="-0.2" />
+        <CardFoodPriceChanges food-name="Chicken Maryland" price-change="1.3" />
+        <CardFoodPriceChanges food-name="Egg large carton 25pc" price-change="0.9" />
     </div>
-
 </template>
 
 <style lang="scss" scoped>

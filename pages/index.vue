@@ -1,24 +1,22 @@
 <script setup lang="ts">
 </script>
 <template>
-    <div class="wrapper">
+    <LayoutPage>
         <LabelPage>Dashboard</LabelPage>
-        <GraphFoodPrices />
-        <div class="spendingStats">
-            <GraphSpendingCategory />
-            <TableRecentOrder />
+        <div class="wrapper">
+
+            <GraphFoodPrices />
+            <div class="spendingStats">
+                <GraphSpendingCategory />
+                <TableRecentOrder />
+            </div>
         </div>
-    </div>
+    </LayoutPage>
 </template>
 
 <style lang="scss" scoped>
 .spendingStats {
     display: grid;
     grid-template-columns: 60% 40%;
-}
-
-.wrapper {
-    display: grid;
-    gap: $margin;
 }
 </style>

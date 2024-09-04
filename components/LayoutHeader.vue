@@ -13,7 +13,7 @@
 
 <style lang="scss" scoped>
 .header {
-    margin-bottom: $margin;
+    padding-bottom: $margin;
     display: grid;
     grid: auto-flow / 200px 1fr 200px;
 }
