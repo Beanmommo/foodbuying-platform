@@ -24,7 +24,7 @@ const colorIndicator = computed(() => {
         <span>
             {{ foodName }}
         </span>
-        <NuxtLink to="/" style="text-decoration: none">
+        <NuxtLink :to="'/browse/item/' + foodName" style="text-decoration: none">
             <span class="priceChange">
                 <span :class="colorIndicator" class="price">
                     $ {{ Math.abs(priceChange) }}

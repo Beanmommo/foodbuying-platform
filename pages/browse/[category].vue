@@ -30,7 +30,7 @@ const catalogItems = ref([
     {
         name: 'Some Chinese Brand: Soy Sauce 1750ml',
         imageUrl: 'https://assets.woolworths.com.au/images/1005/74999.jpg?impolicy=wowsmkqiema&w=1200&h=1200',
-        route: '/browse/item/some-chinese-brand-soy-sauce-1750ml'
+        route: '/browse/item/Some Chinese Brand Soy Sauce 1750ml'
     },
     {
         name: 'SunRice: Medium Grain Rice 10kg',
